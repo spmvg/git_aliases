@@ -11,4 +11,5 @@ alias gp='git push'
 alias gpo='git push --set-upstream origin HEAD'
 alias ga='git add --all; gitk'
 alias gl='git pull'
+alias go='git checkout'
 ```
