@@ -12,8 +12,8 @@ __git_complete gds _git_diff
 alias gdw='git diff --word-diff'
 __git_complete gdw _git_diff
 alias gk='gitk'
-alias gc='git commit -m'
-alias gca='git commit -am'
+alias gc='f() { git commit -m "$1 [$(git branch --show-current)]"; }; f'
+alias gca='f() { git commit -am "$1 [$(git branch --show-current)]"; }; f'
 alias gp='git push'
 alias gpo='git push --set-upstream origin HEAD'
 alias ga='git add --all; gitk'
