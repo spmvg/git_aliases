@@ -20,4 +20,5 @@ alias ga='git add --all; gitk'
 alias gl='git pull'
 alias go='git checkout'
 __git_complete go _git_checkout
+alias pr='start $(git remote get-url origin)/pull/$(git remote show origin | grep "HEAD branch" | awk "{print \$NF}")...$(git branch --show-current | sed "s/#/%23/g")?expand=1'
 ```
